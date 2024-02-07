@@ -38,13 +38,13 @@ class cr8SerialPrompter:
             positive = prompt_in[0] + positive
             negative = prompt_in[1] + negative
         
-        if enabled == True and prompt_type == "positive":
+        if enabled == True and prompt_type == "positive" and prompt != "":
             if prompt[-1] == ",":
                 positive = positive + " " + prompt
             else:
                 positive = positive + "," + prompt
         
-        if enabled == True and prompt_type == "negative":
+        if enabled == True and prompt_type == "negative" and prompt != "":
             if prompt[-1] == ",":
                 negative = negative + " " + prompt
             else:
