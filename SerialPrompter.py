@@ -17,7 +17,7 @@ class cr8SerialPrompter:
             "required": {
                 "enabled": ("BOOLEAN", {"default": True, "label_off": "OFF", "label_on": "ON"}),
                 "prompt_type": (["positive","negative"], {"default": "positive"}),
-                "prompt": ("STRING", {"default": "Prompt", "multiline": True}),
+                "prompt": ("STRING", {"default": "", "multiline": True}),
             },
             "optional": {
                 "prompt_in": ("SERIAL_PROMPT",),
