@@ -1,3 +1,10 @@
+"""
+@author: CRE8IT GmbH
+@title: cr8SerialPrompter
+@nickname: cre8Nodes
+@description: This extension offers various nodes.
+"""
+
 def remove_leading_comma(input_string):
     if input_string and input_string[0] == ',':
         return input_string[1:]

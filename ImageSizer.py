@@ -1,3 +1,10 @@
+"""
+@author: CRE8IT GmbH
+@title: cr8ImageSizer
+@nickname: cre8Nodes
+@description: This extension offers various nodes.
+"""
+
 import math
 
 class cr8ImageSizer:

@@ -1,3 +1,10 @@
+"""
+@author: CRE8IT GmbH
+@title: cr8ApplySerialPrompter
+@nickname: cre8Nodes
+@description: This extension offers various nodes.
+"""
+
 class cr8ApplySerialPrompter:
 
     def __init__(self):
