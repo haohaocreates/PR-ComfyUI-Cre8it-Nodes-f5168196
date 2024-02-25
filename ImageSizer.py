@@ -15,7 +15,7 @@ class cr8ImageSizer:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "model_type": (["SD","SD20","SDXL","SVD"],),
+                "model_type": (["512","768","1024","1280"],),
                 "aspect_ratio_width": ("INT",{
                     "default": 1,
                     "step":1,
@@ -38,10 +38,10 @@ class cr8ImageSizer:
     def execute(self, model_type, aspect_ratio_width, aspect_ratio_height):
         # Define the total pixel counts for SD and SDXL
         total_pixels = {
-            'SD': 512 * 512,
-            'SD20': 768 * 768,
-            'SDXL': 1024 * 1024,
-            'SVD': 1024 * 576
+            '512': 512 * 512,
+            '768': 768 * 768,
+            '1024': 1024 * 1024,
+            '1280': 10280 * 1280
         }
         
         # Calculate the number of total pixels based on model type
